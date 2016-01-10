@@ -1,1 +1,18 @@
-<p>See if we're routing and rendering the pickup item form correctly.</p>
+
+<div>
+	<%= form_tag("/locations/#{@location.id}/pickup", method: "post") do %>
+
+		<p>
+			<%= label_tag(:item, "Enter Item:") %> 
+			<%= text_field_tag(:item) %>
+		</p>
+		
+		<%= submit_tag("Pick up!") %>
+	<% end %>
+</div>
+
+<% if flash[:notice] %>
+  <p>
+    <%= flash[:notice] %>
+  </p>
+<% end %>

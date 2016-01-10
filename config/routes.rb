@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 
   get '/locations/:id/pickup', to: 'locations#pickup'
   get '/locations/:id/details', to: 'locations#details'
-  post '/locations/:id/pickup', to: 'locations#pickup_item'
+  get '/locations/:id/current_items', to: 'locations#current_items'
+  post '/locations/:id/pickup', to: 'characters#pickup_item'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

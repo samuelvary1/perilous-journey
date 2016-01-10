@@ -1,0 +1,17 @@
+<% unless @character.items.empty? %>
+
+	<p>You are currently holding:</p>
+
+	<% @character.items.each do |item| %>
+
+			<p>
+				<strong><%= item.name.capitalize %>:</strong> <%= item.description %>
+			</p>
+
+		<% end %>
+
+	<% else %>
+
+	<p>You are not currently holding anything.</p>
+
+<% end %>

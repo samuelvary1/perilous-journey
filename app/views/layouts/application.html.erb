@@ -25,6 +25,8 @@
 
 </head>
 <body>
+	<% unless @location.id == nil %>
+
 	<%= form_tag("/locations/#{@location.id}", method: "get") do %>
 		<%= submit_tag "Story Text" %>
 	<% end %>
@@ -33,20 +35,32 @@
 		<%= submit_tag "Look Around" %>
 	<% end %>
 
-	<%= form_tag("/locations/#{@location.id - 1}", method: "get") do %>
-		<%= submit_tag "Go to Previous Location" %>
-	<% end %>
-
-	<%= form_tag("/locations/#{@location.id + 1}", method: "get") do %>
-		<%= submit_tag "Go to Next Location" %>
-	<% end %>
-
 
 	<%= form_tag("/locations/#{@location.id}/pickup", method: "get") do %>
 		<%= submit_tag "Pick up Item" %>
 	<% end %>
 
-	<%= yield %>
+	<%= form_tag("/locations/#{@location.id}/current_items", method: "get") do %>
+		<% submit_tag "View Inventory" %>
+	<% end %>
+
+	<% unless @location.id == 1 %>
+
+		<%= form_tag("/locations/#{@location.id - 1}", method: "get") do %>
+			<%= submit_tag "Go to Previous Location" %>
+		<% end %>
+
+	<% end %>
+
+
+	<%= form_tag("/locations/#{@location.id + 1}", method: "get") do %>
+		<%= submit_tag "Go to Next Location" %>
+	<% end %>
+
+<% end %>
+
+
+<%= yield %>
 
 </body>
 </html>

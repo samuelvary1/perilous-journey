@@ -130,7 +130,7 @@ items_list = [
 	key = {
 		id: 2,
 		name: "key",
-		description: "an old brass key with a skull as the handle",
+		description: "An old brass key with a skull as the handle",
 		location_id: 1,
 		character_id: nil
 	},
@@ -138,7 +138,7 @@ items_list = [
 	{
 		id: 3,
 		name: "bandages",
-		description: "a ragged handful of somewhat used first aid supplies. could come in handy.",
+		description: "A ragged handful of somewhat-used first aid supplies. They could come in handy.",
 		location_id: 1, 
 		character_id: nil
 	},
@@ -146,7 +146,7 @@ items_list = [
 	{
 		id: 4,
 		name: "rifle",
-		description: "a battered hunting rifle that looks like it last saw action when Lenin was young.",
+		description: "A battered hunting rifle that looks like it last saw action when Lenin was young.",
 		location_id: 1,
 		character_id: nil
 	},
@@ -154,7 +154,7 @@ items_list = [
 	{
 		id: 5,
 		name: "paper",
-		description: "some scraps of paper from the fireplace. You might be able to piece them together later for valuable intelligence.",
+		description: "Some scraps of paper from the fireplace. You might be able to piece them together later for valuable intelligence.",
 		location_id: 1,
 		character_id: nil
 	},
@@ -170,7 +170,7 @@ items_list = [
 	{
 		id: 7,
 		name: "cobblestone",
-		description: "a broken-off piece of paving stone that is just small enough to fit in your hand.",
+		description: "A broken-off piece of paving stone that is just small enough to fit in your hand.",
 		location_id: 2,
 		character_id: nil
 	},
@@ -178,7 +178,7 @@ items_list = [
 	{
 		id: 8,
 		name: "ammo",
-		description: "a box of shells that miraculously matches the hunting rifle",
+		description: "A box of shells that miraculously matches the hunting rifle",
 		location_id: 2,
 		character_id: nil
 	},
@@ -186,7 +186,7 @@ items_list = [
 	{
 		id: 9,
 		name: "peaches",
-		description: "a can of peaches that is remarkably sealed and appears undamaged.",
+		description: "A can of peaches that is remarkably sealed and appears undamaged.",
 		location_id: 2,
 		character_id: nil
 	}
