@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'bcrypt', :require => 'bcrypt'
 gem 'pry-rails'
 
 gem 'awesome_print', :group => :development

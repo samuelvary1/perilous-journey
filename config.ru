@@ -2,6 +2,5 @@
 
 require ::File.expand_path('../config/environment', __FILE__)
 
-load "#{Rails.root}/db/seeds.rb"
 run Rails.application
 

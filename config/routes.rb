@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
 
+  get "sign_up" => "users#new", :as => "sign_up"
+
   get 'welcome/index'
 
-  root 'welcome#index'
+  root :to => "users#new"
 
+  resources :users
   resources :characters, only: [:index, :show]
   resources :locations, only: [:show, :index]
   resources :items
