@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109204917) do
+ActiveRecord::Schema.define(version: 20160110155011) do
 
   create_table "characters", force: :cascade do |t|
     t.string   "rank"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20160109204917) do
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.text     "plot_text"
   end
 
 end

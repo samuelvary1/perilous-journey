@@ -58,25 +58,38 @@ locations_list = [
 	{
 		id: 1, 
 		name: "apartment",
-		description: "It appears to be an old, abandoned apartment."
+		description: "It appears to be an old, abandoned apartment.",
+		plot_text: 	"You open your eyes to find yourself in a strange apartment, having no idea how you'd gotten there. You gaze around in fear, but it quickly becomes apparent that you are alone here. You reach up and feel something wet and sticky behind your left ear, and your fingertips come away red in the hazy light of the room. It appears to be the middle of the night, but someone has lit a candle in the corner of the room, and there is evidence that someone has tended to you medically. \n You reach up again and sure enough find a rough row of stitches along what feels like a long gash towards the back of your head.'How on earth did I get here?' you whisper aloud. The last thing you remember was camping out in an old hospital building with Pavel, your spotter for the mission. A German patrol was supposed to come marching right down the streets of the newly conquered city, but they hadn't counted on a small band of resistance fighters staying behind to wage a hit-and-run campaign as long as they were still breathing. This city had been your home, after all, and with Pavel by your side, you felt confidence and adrenaline surge through your veins as you gripped the stock of your scoped rifle. Then the artillery had rained down on their heads. Apparently the Germans had known more about remaining pockets of resistance than anticipated. The mortars (and worse) came down from the sky with terrifying whistles and screeches across the previously tranquil autumn sky. The round that took out Pavel came barreling through the roof and crashing through the rotted floorboards behind you. You had just enough time to exchange a stupefied look of bewilderment with your comrade, before the round hit something solid and detonated upward through the building." 
+		
 	}, 
 
 	{
 		id: 2,
 		name: "street",
-		description: "What may once have been a bustling thoroughfare is now pocked with craters and covered in rubble."
+		description: "What may once have been a bustling thoroughfare is now pocked with craters and covered in rubble.",
+		plot_text: "You slide the key into the door and turn it with a satisfying clatter. 'Why would someone lock me in here?' you wonder. No matter. You are free for the time being. Under the cover of darkness, you descend the rickety stairway and emerge onto the street. You move silently along the cobblestones, desperately hoping no erstwhile Germans should pop out and disturb your progress. You remember that Lt. Medvedev briefed you and Pavel regarding a fallback position in the forest, just beyond the outskirts of the town. Despite a wave of dizziness that creeps over you, you manage to get your bearings and continue north along the avenue. All is quiet."
 	},
 
 	{
 		id: 3,
-		name: "the forest",
-		description: "The moon casts eerie shadows throughout a sparse forest on the edge of town."
+		name: "edge of town",
+		description: "You've reached the edge of the town. The terrifying forest looms beyond.",
+		plot_text: 
+			"You can see the ghostly forest just up ahead. 'Lt. Medvedev will probably be cooking up a nice cauldron of soup at this point', you think. How good it will be to reunite with him. The news of Pavel's death will be painful to deliver, but in your heart you know he died an exceedingly noble death. Suddenly, a shot rings out from behind you and shatters a window not two inches from your face. Glass hits you in a blinding spray but you somehow manage to stumble away unscathed. You instinctively crouch low and whirl around to face your attacker. You spot another muzzle flash coming from a high church window. This time, the shot whizzes by your ear, splitting the air with a sound like a snapping rubber band. In one smooth motion, your instincts and training take over. You unsling the old hunting rifle from your shoulder and slide one cartridge into the breach. You just have time to raise the rifle and fire. A dark form crumples to the floor behind the window. Once again silence fills the air, and you appear to be safe. For now. You continue on to the edge of the forest, leaving the town behind. You glance back over your shoulder and wonder if you'll ever see this place again."
 	},
 
 	{
 		id: 4,
-		name: "the bunker",
-		description: "a German pillbox. The corpse of a machine-gunner lies slumped over his weapon. Boxes of ammunition line the walls."
+		name: "the bunker in the woods",
+		description: "a German pillbox. The corpse of a machine-gunner lies slumped over his weapon. Boxes of ammunition line the walls.",
+		plot_text: "You make your way through the forest, stopping only once when a wolf's howl in the distance catches you off guard. Suddenly you spot a large, rectangular form in the distance. It looks like a bunker. You crouch low and make your way towards it. Upon entering the bunker, you immediately spot Lt. Medvedev. He looks terrible."
+	},
+
+	{
+		id: 5, 
+		name: "victory screen",
+		description: "this screen will either deliver a victory message or game over depending on if they save Medvedev",
+		plot_text: ""
 	}
 
 ]
