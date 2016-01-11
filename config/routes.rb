@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
 
-  get "sign_up" => "users#new", :as => "sign_up"
+  get "log_in", to: "sessions#new"
 
-  get 'welcome/index'
+
+  get "sign_up" => "users#new"
+
+  get 'welcome/index', to: 'welcome#index'
 
   root :to => "users#new"
 
@@ -11,6 +14,7 @@ Rails.application.routes.draw do
   resources :characters, only: [:index, :show]
   resources :locations, only: [:show, :index]
   resources :items
+  resources :sessions, only: [:new, :create]
 
   get '/locations/:id/pickup', to: 'locations#pickup'
   get '/locations/:id/details', to: 'locations#details'

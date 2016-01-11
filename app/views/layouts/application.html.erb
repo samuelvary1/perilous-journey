@@ -69,6 +69,12 @@
 
 <% end %>
 
+<% if @current_user %>
+  Signed in as <%= @current_user.name %> | <%= link_to "Log Out", '/log_out' %>
+<% else %>
+  <%= link_to 'Log In', '/log_in' %> | <%= link_to 'Sign Up', '/sign_up' %>
+<% end %>
+
 
 <%= yield %>
 

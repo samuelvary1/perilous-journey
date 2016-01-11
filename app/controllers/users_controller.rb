@@ -8,9 +8,11 @@ class UsersController < ApplicationController
   	if @user.save 
   		session[:user_id] = @user.id
 
-  		redirect_to root_url, :notice => "Signed up!"
+  		flash[:notice] = "Signed up!"
+  		redirect_to "/welcome/index"
   	else
-  		redirect_to new_user_path
+  		flash[:alert] = "There was a problem with your signup form. Please try again!"
+  		redirect_to :back
   	end
   end
 
