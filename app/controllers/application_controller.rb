@@ -5,10 +5,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
   def current_user
-  		@current_user ||= User.find(session[:user_id]) if session[:user_id]
-  		# we want this method to be available in views as well, so we can use a method called helper method.
-  		# it's a controller method that gets declared as a helper.
-
+		@current_user ||= User.find(session[:user_id]) if session[:user_id]
+		# we want this method to be available in views as well, so we can use a method called helper method.
+		# it's a controller method that gets declared as a helper.
   end
 
   def logged_in?

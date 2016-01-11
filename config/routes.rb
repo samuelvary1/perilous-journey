@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get "log_in", to: "sessions#new"
   post "log_in", to: "sessions#create"
+  post "log_out", to: "sessions#destroy"
 
   get "sign_up" => "users#new"
 
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
   resources :characters, only: [:index, :show]
   resources :locations, only: [:show, :index]
   resources :items
-
+  resources :sessions
 
   get '/locations/:id/pickup', to: 'locations#pickup'
   get '/locations/:id/details', to: 'locations#details'
