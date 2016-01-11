@@ -1,5 +1,7 @@
 class LocationsController < ApplicationController
 
+	before_filter :authenticate
+
 	def show
 		@location = Location.find(params[:id])
 	end
