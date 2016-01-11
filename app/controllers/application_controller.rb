@@ -17,7 +17,8 @@ class ApplicationController < ActionController::Base
   def authenticate
     if session[:user_id].nil?
       
-      redirect_to :controller => "sessions", :action => "create", notice: "You must log in to play the game!"
+    redirect_to :controller => "sessions", :action => "create"
+    flash[:notice] = "You must log in to play the game!"
     end
   end
 end
