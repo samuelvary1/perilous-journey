@@ -2,19 +2,17 @@ Rails.application.routes.draw do
 
 
   get "log_in", to: "sessions#new"
-
+  post "log_in", to: "sessions#create"
 
   get "sign_up" => "users#new"
 
-  get 'welcome/index', to: 'welcome#index'
-
-  root :to => "users#new"
+  root 'welcome#index'
 
   resources :users
   resources :characters, only: [:index, :show]
   resources :locations, only: [:show, :index]
   resources :items
-  resources :sessions, only: [:new, :create]
+
 
   get '/locations/:id/pickup', to: 'locations#pickup'
   get '/locations/:id/details', to: 'locations#details'

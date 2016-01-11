@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   		session[:user_id] = @user.id
 
   		flash[:notice] = "Signed up!"
-  		redirect_to "/welcome/index"
+  		redirect_to root_path
   	else
   		flash[:alert] = "There was a problem with your signup form. Please try again!"
   		redirect_to :back
