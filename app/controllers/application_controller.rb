@@ -13,4 +13,11 @@ class ApplicationController < ActionController::Base
   def logged_in?
   	!!current_user
   end
+
+  def authenticate
+    if session[:user_id].nil?
+      
+      redirect_to :controller => "sessions", :action => "create", notice: "You must log in to play the game!"
+    end
+  end
 end

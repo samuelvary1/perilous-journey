@@ -5,13 +5,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <% if logged_in? %>
-		Current user is: <%= current_user.email %>
-		<%= link_to "Log Out", log_out_path, method: :destroy %>
-	<% else %>
-		<%= link_to "Sign Up", sign_up_path %> |
-		<%= link_to "Log In", new_session_path %>
-	<% end %>
+	<p>
+		<% if logged_in? %>
+			Current user is: <%= current_user.email %>
+			<%= link_to "Log Out", log_out_path, method: :destroy %>
+		<% else %>
+			<%= link_to "Sign Up", sign_up_path %> |
+			<%= link_to "Log In", new_session_path %>
+		<% end %>
+	</p>
 
 	<% if @location.nil? %>
 
@@ -39,6 +41,8 @@
 
 </head>
 <body>
+
+
 	<% if @location.nil? %>
 
 	<% yield %>
