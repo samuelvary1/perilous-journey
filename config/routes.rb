@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
+  root 'welcome#index'
 
   get "log_in", to: "sessions#new"
   post "log_in", to: "sessions#create"
   post "log_out", to: "sessions#destroy"
 
-  get "sign_up" => "users#new"
+  get "sign_up", to: "users#new"
 
-  root 'welcome#index'
 
   resources :users
   resources :characters, only: [:index, :show]

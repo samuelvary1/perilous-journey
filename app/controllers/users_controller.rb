@@ -9,8 +9,7 @@ class UsersController < ApplicationController
   	if @user.save 
   		session[:user_id] = @user.id
 
-  		flash[:notice] = "Signed up!"
-  		redirect_to root_path
+      redirect_to root_path, :notice => "Thank you for signing up!"
   	else
   		flash[:alert] = "There was a problem with your signup form. Please try again!"
   		redirect_to :back
