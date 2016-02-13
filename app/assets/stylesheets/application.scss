@@ -15,13 +15,14 @@
  */
 
 
-        
-*= require bootstrap.min
-*= require style
-*= require YTPlayer
-*= require flexslider
-*= require font-awesome.min
-*= require animate
-*= require owl.carousel
-*= require owl.theme
+@import "bootstrap.min";
+@import "bootstrap-theme.min";
+@import "style";
+@import "YTPlayer";
+@import "flexslider";
+@import "font-awesome.min";
+@import "animate";
+@import "owl.carousel";
+@import "owl.theme";
+
 
