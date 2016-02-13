@@ -22,7 +22,7 @@
 //= require bootstrap.min.js
 //= require jquery.flexslider-min.js
 //= require wow.min.js
-//= require jquery.stick.js
+//= require jquery.sticky.js
 //= require bootstrap-hover-dropdown.min.js
 //= require jquery.stellar.min.js
 //= require owl.carousel.min.js
@@ -38,5 +38,4 @@
 //= require jquery.themepunch.revolution.min.js
 //= require revolution-custom.js
 //= require isotope-custom.js
-//= require pace.min.js
 
