@@ -38,4 +38,5 @@
 //= require jquery.themepunch.revolution.min.js
 //= require revolution-custom.js
 //= require isotope-custom.js
+//= require pace.min.js
 
