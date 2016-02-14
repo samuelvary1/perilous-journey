@@ -194,14 +194,6 @@ items_list = [
 
 ]
 
-items_list.each do |hash|
-	p = Item.new
-	hash.each do |attribute, value|
-		p[attribute] = value
-	end
-	p.save
-end
-
 locations_list.each do |hash|
 	p = Location.new
 	hash.each do |attribute, value|
@@ -219,4 +211,12 @@ characters_list.each do |hash|
 end
 
 
+
+items_list.each do |hash|
+	p = Item.new
+	hash.each do |attribute, value|
+		p[attribute] = value
+	end
+	p.save
+end
 

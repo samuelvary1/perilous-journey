@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160110220924) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "characters", force: :cascade do |t|
     t.string   "rank"
     t.string   "first_name"
@@ -33,8 +36,8 @@ ActiveRecord::Schema.define(version: 20160110220924) do
     t.datetime "updated_at",   null: false
   end
 
-  add_index "items", ["character_id"], name: "index_items_on_character_id"
-  add_index "items", ["location_id"], name: "index_items_on_location_id"
+  add_index "items", ["character_id"], name: "index_items_on_character_id", using: :btree
+  add_index "items", ["location_id"], name: "index_items_on_location_id", using: :btree
 
   create_table "locations", force: :cascade do |t|
     t.string   "name"
@@ -52,4 +55,6 @@ ActiveRecord::Schema.define(version: 20160110220924) do
     t.string   "password_digest"
   end
 
+  add_foreign_key "items", "characters"
+  add_foreign_key "items", "locations"
 end
